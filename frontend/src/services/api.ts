@@ -1,6 +1,6 @@
-import type{ PasswordCheckResponse, PasswordGenerateResponse, GenerateOptions } from "../types";
+import type { PasswordCheckResponse, PasswordGenerateResponse, GenerateOptions } from "../types";
 
-const BASE_URL = "http://localhost:8080/api/password";
+const BASE_URL = "https://backend-production-ad3b.up.railway.app/api/password";
 
 export async function checkPassword(password: string): Promise<PasswordCheckResponse> {
   const response = await fetch(`${BASE_URL}/check`, {
